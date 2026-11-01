@@ -69,6 +69,9 @@ Open and run the notebooks in numeric order. Some notebook cells use paths relat
 - The notebook workflow should be rerun from the first notebook to regenerate derived data consistently.
 - Review the statistical test assumptions and report the test statistic, p-value, confidence interval, and effect size when presenting conclusions.
 
-## Author
 
-Sai Datta Putta
+---
+
+**Sai Datta Putta**
+
+[LinkedIn](https://www.linkedin.com/in/sai-datta-putta/)

@@ -27,6 +27,35 @@ The repository includes the IBM Telco Customer Churn dataset:
 - Binary target: `Churn` (Yes/No)
 - Demographic, contract, service, tenure, and billing variables
 
+## Results and Evidence
+
+The following descriptive figures were calculated from the committed raw Telco CSV during this documentation review. They are not outputs of a newly executed notebook or statistical test.
+
+### Dataset-level churn distribution
+
+| Churn outcome | Customers | Share |
+|---|---:|---:|
+| No churn | 5,174 | 73.46% |
+| Churn | 1,869 | 26.54% |
+| **Total** | **7,043** | **100.00%** |
+
+### Monthly charges by churn outcome
+
+The raw dataset contains the following descriptive MonthlyCharges statistics:
+
+| Group | Customers | Mean monthly charges | Median monthly charges | Minimum | Maximum |
+|---|---:|---:|---:|---:|---:|
+| Churn = Yes | 1,869 | 74.44 | 79.65 | 18.85 | 118.35 |
+| Churn = No | 5,174 | 61.27 | 64.43 | 18.25 | 118.75 |
+
+The churned group has a higher mean monthly charge by **13.17** in the raw dataset. This is a descriptive difference only; it does not establish statistical significance or causation.
+
+### Statistical testing status
+
+The saved 04_applied_statistics.ipynb notebook loads the cleaned dataset, selects MonthlyCharges and Churn, and separates monthly charges into churned and non-churned groups. The committed notebook outputs show the data split and sample rows, but do not contain a saved t-test statistic, p-value, confidence interval, or effect size. Therefore this README does not claim a completed significant hypothesis-test result.
+
+The notebook's stated comparison can be completed by reporting the test statistic, p-value, confidence interval, effect size, and the assumptions used.
+
 ## Tools
 
 - Python
